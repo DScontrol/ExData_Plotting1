@@ -66,7 +66,7 @@ SubMeter3<-powerconsump_1FEB_2FEB_2007$Sub_metering_3
 
 matplot(Timeline, cbind(SubMeter1,SubMeter2,SubMeter3),type="l",col=c("black","red","blue"),lty=c(1,1),xlab="",ylab="Energy sub metering")
 axis(2,lwd=2)
-legend(x="topright",legend=c("Sub_metering_1","Sub_metering_2","Sub_metering_3"),lty = c(1,1,1),col=c("black","red","blue"))
+legend(x="topright", text.width = strwidth("1,000,000,000,0000") ,legend=c("Sub_metering_1","Sub_metering_2","Sub_metering_3"),lty = c(1,1,1),col=c("black","red","blue"))
 
 #Fourth PLOT
 reactivePower<-powerconsump_1FEB_2FEB_2007$Global_reactive_power
